@@ -12,6 +12,8 @@
 			background-color: #dedede;
 			float: left;
 			margin: 10px;
+
+                display: flex;
           }
 
 		.items{
@@ -23,10 +25,32 @@
 			line-height: 100px;
 			font-size: 22px;
 		}
+          /*Es lo mismo en cada c, pero de diferente manera*/
+          .c1{
+               flex-direction: column;
+               flex-wrap: wrap;
+               flex-flow: column wrap;
+          }
+          .c2{
+               flex-direction: column-reverse;
+               flex-wrap: wrap-reverse;
+               flex-flow: column-reverse wrap-reverse;
+          }
+          .c3{
+               flex-direction: row;
+               flex-wrap: wrap;
+               flex-flow: row wrap;
+          }
+          .c4{
+               
+               flex-direction: row-reverse;
+               flex-wrap: wrap-reverse;
+               flex-flow: row-reverse wrap-reverse;
+          }
      </style>
 </head>
 <body>
-     
+     <h1>Ejes y direcciones</h1>
      <div class="contenedor c1">
           <div class="items">1</div>
           <div class="items">2</div>
